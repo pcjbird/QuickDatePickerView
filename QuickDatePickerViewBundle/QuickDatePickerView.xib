@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuickDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJb-A1-re3">
+                    <rect key="frame" x="0.0" y="397" width="375" height="270"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d34-Xt-C1i">
+                            <rect key="frame" x="0.0" y="220" width="375" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6Hy-a5-cIb"/>
+                            </constraints>
+                            <state key="normal" title="Confirm"/>
+                        </button>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp9-ax-wz6">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="4ia-aJ-P1T"/>
+                                <constraint firstAttribute="width" constant="300" id="nn0-a0-6PS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                            <color key="textColor" red="0.91225260500000005" green="0.93091040849999995" blue="0.95064496990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="nn0-a0-6PS"/>
+                                    <exclude reference="4ia-aJ-P1T"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="270" id="0Zt-zV-UAD"/>
+                        <constraint firstAttribute="trailing" secondItem="xp9-ax-wz6" secondAttribute="trailing" id="2UE-3W-29g"/>
+                        <constraint firstItem="xp9-ax-wz6" firstAttribute="leading" secondItem="GJb-A1-re3" secondAttribute="leading" id="4Jl-Ir-G71"/>
+                        <constraint firstItem="d34-Xt-C1i" firstAttribute="leading" secondItem="GJb-A1-re3" secondAttribute="leading" id="Bka-08-XcN"/>
+                        <constraint firstAttribute="bottom" secondItem="d34-Xt-C1i" secondAttribute="bottom" id="FYk-HV-BBf"/>
+                        <constraint firstAttribute="trailing" secondItem="d34-Xt-C1i" secondAttribute="trailing" id="KiF-l6-kaP"/>
+                        <constraint firstItem="xp9-ax-wz6" firstAttribute="top" secondItem="GJb-A1-re3" secondAttribute="top" id="Tfn-oX-mJ5"/>
+                        <constraint firstItem="d34-Xt-C1i" firstAttribute="top" secondItem="xp9-ax-wz6" secondAttribute="bottom" id="dEW-CD-nQ4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="GJb-A1-re3" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="NRo-G3-pLn"/>
+                <constraint firstAttribute="bottom" secondItem="GJb-A1-re3" secondAttribute="bottom" id="kuQ-Z4-P4i"/>
+                <constraint firstItem="GJb-A1-re3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lvf-1T-5pA"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="0yx-la-c6Z" appends="YES" id="u84-im-z7F"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="0yx-la-c6Z"/>
+    </objects>
+</document>
